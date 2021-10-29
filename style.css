@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
+
+body {
+    font-family: 'Londrina Solid', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center ;
+    position: fixed;
+}
+
+.central-nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.navigation {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.language {
+    color: #d0f8ff;
+}
+
+.product-page {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 150px;
+    padding-right: 100px;
+    padding-top: 130px;
+    padding-bottom: 30px;
+    gap: 50px;
+}
+
+.photo-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.code {
+    /* visibility: hidden; */
+}
+
+.options {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+table {
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.6);
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+}
+td {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 7px;
+    padding-left: 17px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
+button {
+    background-color: rgb(43, 108, 228);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    border: 1px solid darkblue;
+    cursor: pointer;
+}
+
+.monitor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prodajne-vrednosti {
+    margin-right: 70px;
+}
+
+video {
+    width: 87%;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.7);
+}
+
+.active {
+    color: violet;
+}
+
+.specification {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.spec-table {
+    background-color: #d0f8ff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    color: black;
+}
+
+.spec-table > :nth-child(even){
+    background-color:#fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row:hover {
+    cursor: pointer;
+}
+
+ul {
+    display: none;
+    width: 100%;
+}
+
+ul.visible {
+    display: block;
+}
+
+li {
+    width: 100%;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.5);;
+}
+li:hover {
+    background-color: whitesmoke;
+    width: 99%;
+}
+
+.ab {
+    width: 40%;
+    text-decoration: none;
+    color: #307dc1;
+}
+
+span {
+    padding: 15px;
+    font-weight: 700;
+}
+
+
+
