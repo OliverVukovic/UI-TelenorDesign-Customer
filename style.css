@@ -93,7 +93,6 @@ nav {
 
 .product-page {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     padding-left: 150px;
     padding-right: 100px;
@@ -327,6 +326,7 @@ span {
         text-align: center;
         gap: 0px;
         padding-bottom: 10px;
+        flex-wrap: wrap;
     }
 
     .options {
