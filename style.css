@@ -311,6 +311,7 @@ span {
     .central-nav {
         margin-top: -20px;
         margin-bottom: 20px;
+        gap: 18px;
     }
 
     .right-part {
