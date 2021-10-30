@@ -93,6 +93,7 @@ nav {
 
 .product-page {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-left: 150px;
     padding-right: 100px;
@@ -200,6 +201,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 video {
@@ -297,5 +299,74 @@ span {
     --colorlang: #307dc1;
     /* --logoimg: url("./images/telenor-logo-white.jpg");
     --watchimg: url("./images/Huawei-Watch3Pro-black.jpg"); */
+}
+
+
+@media (max-width: 430px) {
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .central-nav {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    .right-part {
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    
+    .product-page {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 200px;
+        text-align: center;
+        gap: 0px;
+        padding-bottom: 10px;
+    }
+
+    .options {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .player {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .small-headline-1 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .monitor {
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 20px;
+        order: 2;
+    }
+
+    .ab {
+        width: 65%;
+    }
+
+    br {
+        display: none
+    }
+
 }
 
