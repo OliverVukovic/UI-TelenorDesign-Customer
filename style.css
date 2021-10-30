@@ -7,6 +7,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    background-color: var(--colorbody);
 }
 
 section {
@@ -20,8 +21,8 @@ section {
 
 nav {
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: var(--colornav);
+    color: var(--colorbody);
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -36,13 +37,58 @@ nav {
 }
 
 .navigation {
-    color: white;
+    color: var(--colorbody);
     font-size: 20px;
     text-decoration: none;
 }
+.navigation:hover {
+    color: var(--colorlang);
+}
+
+.right-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.pick-a-color {
+    display: flex;
+    flex-direction: column;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--colorbody);
+    cursor: pointer;
+}
 
 .language {
-    color: #d0f8ff;
+    color: var(--colorlang);
+    cursor: pointer;
+}
+
+.language-dropdown {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 70px;
+    height: auto;
+    gap: 15px;
+    margin-top: 35px;
+    margin-bottom: -150px;
+    display: none;
+}
+
+.flag {
+    width: 50px;
+    height: 36px;
+    cursor: pointer;
+}
+.flag:hover {
+    opacity: 50%;
 }
 
 .product-page {
@@ -61,8 +107,21 @@ nav {
     align-items: center;
 }
 
-.code {
-    /* visibility: hidden; */
+h2 {
+    font-size: 26px;
+    color: var(--colornav);
+}
+
+.small-headline {
+    font-size: 22px;
+    background-color: #307dc1;
+    width: 98%;
+    text-align: center;
+    border: 1px solid #307dc1;
+    color: var(--colorsmart);
+    padding: 10px;
+    box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
 }
 
 .options {
@@ -75,13 +134,26 @@ nav {
     margin: auto;
 }
 
+
+h1 {
+    /* font-size: 32px; */
+    color: var(--colornav);
+}
+
+p {
+    /* font-size: 18px; */
+    color: var(--colornav);
+}
+
 table {
     border: 1px solid rgb(0, 0, 0);
     width: 100%;
     box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.6);
     background-color: whitesmoke;
     margin-bottom: 20px;
+    border-radius: 8px;
 }
+
 td {
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 7px;
@@ -97,17 +169,31 @@ td {
     padding-top: 30px;
 }
 
+.small-headline-1 {
+    font-size: 22px;
+    background-color: #307dc1;
+    width: 86%;
+    text-align: center;
+    border: 1px solid #307dc1;
+    color: var(--colorsmart);
+    padding: 10px;
+    margin-left: 105px;
+    box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+
 button {
     background-color: rgb(43, 108, 228);
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    color: white;
+    color: var(--colorsmart);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 22px;
     border: 1px solid darkblue;
     cursor: pointer;
+    box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.7);
 }
 
 .monitor {
@@ -116,14 +202,10 @@ button {
     align-items: center;
 }
 
-.prodajne-vrednosti {
-    margin-right: 70px;
-}
-
 video {
     width: 87%;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--colornav);
     padding: 5px;
     box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.7);
 }
@@ -150,10 +232,11 @@ video {
     align-items: flex-start;
     margin: auto;
     color: black;
+    border-radius: 8px;
 }
 
 .spec-table > :nth-child(even){
-    background-color:#fff;
+    background-color: var(--colorsmart);
 }
 
 .row {
@@ -162,8 +245,6 @@ video {
     align-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .row:hover {
@@ -172,7 +253,7 @@ video {
 
 ul {
     display: none;
-    width: 100%;
+    width: 60%;
 }
 
 ul.visible {
@@ -180,13 +261,12 @@ ul.visible {
 }
 
 li {
-    width: 100%;
     padding: 5px;
     color: rgba(0, 0, 0, 0.5);;
 }
 li:hover {
     background-color: whitesmoke;
-    width: 99%;
+    width: 98.5%;
 }
 
 .ab {
@@ -201,4 +281,21 @@ span {
 }
 
 
+.light-version {
+    --colorbody: #FFFFFF;
+    --colornav: #000000;
+    --colorsmart: #ffffff;
+    --colorlang: #d0f8ff;
+    /* --logoimg: url("./images/telenor-logo-black.jpg");
+    --watchimg: url("./images/Huawei-Watch3Pro.jpg"); */
+}
+
+.dark-version {
+    --colorbody: #000000;
+    --colornav: #ffffff;
+    --colorsmart: #ffffff;
+    --colorlang: #307dc1;
+    /* --logoimg: url("./images/telenor-logo-white.jpg");
+    --watchimg: url("./images/Huawei-Watch3Pro-black.jpg"); */
+}
 

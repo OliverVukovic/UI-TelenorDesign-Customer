@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
-    <title>UI-Design</title>
+    <title>UI-Design-Customer</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class="light-version">
     <section>
         <header>
             <nav>
                 <div>
-                    <img src="./images/telenor-logo-black.jpg" alt="">
+                    <img class="white01" src="./images/telenor-logo-black.jpg" alt="logo-black">
                 </div>
 
                 <div class="central-nav">
@@ -32,15 +32,24 @@
                     </div>
                 </div>
                 
-                <div>
-                    <a href="" class="language">Jezik</a>
+                <div class="right-part">
+                    <div class="color" id="dark-mode" onclick="changeColor()"></div>
+                
+                    <div class="pick-a-language">
+                        <div onclick="langMenu()" class="language">Jezik</div>
+                        <div class="language-dropdown" id="lang-drop">
+                            <div class="flag"><img src="./images/srb.jpg" alt="srb"></div>
+                            <div class="flag"><img src="./images/uk.png" alt="eng"></div>
+                        </div>
+                    </div>
                 </div>
+
             </nav>
             
             <div class="product-page">
                 <div class="photo-price">
-                    <img src="./images/Huawei-Watch3Pro.jpg" alt="">
-                    <h3 class="code">ERP sifra: 14893</h3>
+                    <img class="white02" src="./images/Huawei-Watch3Pro.jpg" alt="watch-image">
+                    <br>
                     <h2>Cena: 64,800 din</h2>
                 </div>
                 
@@ -55,7 +64,7 @@
         </header>
 
         <div class="options">
-            <h3>Pametne opcije</h3>
+            <h3 class="small-headline">Pametne opcije</h3>
             <table>
                 <tr>
                     <td>Podrzava razgovore</td>
@@ -135,7 +144,7 @@
         </div>
 
         <div class="player">
-            <h3>Prodajne prednosti</h3>
+            <h3 class="small-headline-1">Prodajne prednosti</h3>
             <div class="monitor">
                 <button type="button" id="play-buton" onclick="playVideo()">Play</button>
                 <video src="./video/huawei-video.mp4" id="video"></video>
@@ -147,9 +156,9 @@
 
         <div class="specification">
             <div>
-                <img src="./images/specification-icon.png" alt="specification">
+                <img class="white03" src="./images/specification-black.png" alt="specification-white">
             </div>
-            <br><h2>Specifikacija</h2>
+            <br><h3 class="small-headline">Specifikacija</h3>
 
             <div class="spec-table">
 
